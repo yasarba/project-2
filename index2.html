@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>   
+ <meta charset="UTF-8">   
+  <meta name="viewport"         
+   content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+     <title>Document</title>
+    </head>
+    <body>
+        <div> 
+       <div>   
+     <div class="club-naam">            Ajax           </div>       
+
+           <div class="club-one-score" id="score-ajax">0</div>  
+
+          </div>  
+          </div>   
+           <div> 
+
+ <div class="club-naam">            Feyenoord        </div>    
+ <div class="club-one-score" id="score-feyenoord" >0</div>      
+ <button onclick="ajax_scoort()">Ajax scoort!</button>    
+  <button onclick="feyenoord_scoort()">Feyenoord scoort!</button>  
+  </div>    
+ <script>      
+var ajax = 0;      
+ var feyenoord = 0;      
+ function ajax_scoort(){      
+ ajax++;         
+ document.getElementById("score-ajax").innerText = ajax;        }  
+
+ function feyenoord_scoort(){      
+ feyenoord++;         
+ document.getElementById("score-feyenoord").innerText = feyenoord;        }  
+
+ </script>
+  </body>
+</html>
